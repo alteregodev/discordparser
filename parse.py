@@ -63,7 +63,9 @@ def main(page: ft.Page):
                 results.value = (f'''User ID : {data["user_id"]}
 Account created at : {data["created_at"]}
 Avatar url : {data.get("avatar_url")}
-Banner url : {data.get("banner_url")}''')
+Banner url : {data.get("banner_url")}
+Snowflake lookup : https://discordlookup.com/user/{data["user_id"]}
+Discord tracker : https://discord-tracker.com/tracker/user/{data["user_id"]}/''')
                 
             except ValueError:
                 error('Please, enter a valid numeric ID')
