@@ -75,7 +75,7 @@ Discord tracker : https://discord-tracker.com/tracker/user/{data["user_id"]}/'''
         page.update()
 
     title = ft.Text(
-        'Discord Parsing Tool',
+        'Discord Parsing Tool 🔎',
         size=50
     )
 
@@ -104,5 +104,6 @@ Discord tracker : https://discord-tracker.com/tracker/user/{data["user_id"]}/'''
     page.add(ft.Row([textfield, button]))
     page.add(ft.Row([errors]))
     page.add(ft.Row([results]))
+    page.add(ft.Row([ft.Text('made by alteregodev', size=15)], vertical_alignment=ft.MainAxisAlignment.END))
 
 ft.app(target=main)
